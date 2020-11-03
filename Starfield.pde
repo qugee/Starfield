@@ -9,7 +9,11 @@ void draw()
 }
 class Particle
 {
-	//your code here
+	double myX, myY, myAngle, mySpeed;
+	Particle()
+	{
+	myX = 
+	}
 }
 
 class OddballParticle //inherits from Particle
