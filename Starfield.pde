@@ -21,8 +21,8 @@ class Water
 	{
 	myX = 200;
 	myY = 200;
-	myAngle = 2.03;
-	mySpeed = 8.25;
+	myAngle = Math.random()*2*Math.PI;
+	mySpeed = Math.random()*10;
 	}
 	void draw() {
 	myX = myX + Math.cos(myAngle)*mySpeed;
