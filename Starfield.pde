@@ -42,13 +42,13 @@ class OddballWater //inherits from Particle
 	myX = myY = 200;
 	}
 	void draw() {
-	myX = myX + Math.random()*10;
-	myY = myY + Math.random()*10;
+	myX = myX + Math.random()*1;
+	myY = myY + Math.random()*1;
 	}
 	void show() {
 	fill(0,255,0);
 	noStroke();
-	rect(myX,myY,10,30);
+	rect(myX,myY,40,20);
 	}
 }
 
