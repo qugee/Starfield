@@ -1,24 +1,38 @@
-//your code here
+Water[] sprinkler = new Water[100];
 void setup()
 {
-	//your code here
+	size(400,400);
+	for(int i = 0;i<sprinkler.length;i++){
+	sprinkler[i] = new Water();
+	}
 }
 void draw()
 {
-	//your code here
+	background(0);
+	for(int i = 0;i<sprinkler.length;i++){
+	sprinkler[i].draw();
+	sprinkler[i].show();
+	}
 }
-class Particle
+class Water
 {
 	double myX, myY, myAngle, mySpeed;
-	Particle()
+	Water()
 	{
-	myX = 
+	myX = 200;
+	myY = 200;
+	}
+	void draw() {
+	
+	}
+	void show() {
+	
 	}
 }
 
 class OddballParticle //inherits from Particle
 {
-	//your code here
+	//your
 }
 
 
