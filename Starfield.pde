@@ -1,4 +1,4 @@
-Water[] sprinkler = new Water[100];
+Water[] sprinkler = new Water[1000];
 void setup()
 {
 	size(400,400);
