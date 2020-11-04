@@ -32,7 +32,7 @@ class Water
 	void show() {
 	fill(0,0,255);
 	noStroke();
-	ellipse((float)myX,(float)myY,20,20);
+	ellipse((float)myX,(float)myY,10,20);
 	}
 }
 
