@@ -3,8 +3,8 @@ void setup()
 {
 	size(400,400);
 	for(int i = 0;i<sprinkler.length;i++){
-	sprinkler[i] = new Water();
 	sprinkler[0] = new OddballWater();
+	sprinkler[i] = new Water();
 	}
 }
 void draw()
