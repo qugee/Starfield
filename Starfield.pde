@@ -42,8 +42,8 @@ class OddballWater //inherits from Particle
 	myX = myY = 200;
 	}
 	void draw() {
-	myX = myX + Math.random()*1;
-	myY = myY + Math.random()*1;
+	myX = myX + Math.random()*1-0.5;
+	myY = myY + Math.random()*1-0.5;
 	}
 	void show() {
 	fill(0,255,0);
