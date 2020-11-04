@@ -21,12 +21,17 @@ class Water
 	{
 	myX = 200;
 	myY = 200;
+	myAngle = 2.03;
+	mySpeed = 8.25;
 	}
 	void draw() {
-	
+	myX = myX + Math.cos(myAngle)*mySpeed;
+	myY = myY + Math.sin(myAngle)*mySpeed;
 	}
 	void show() {
-	
+	fill(0,0,255);
+	noStroke();
+	ellipse((float)myX,(float)myY,20,20);
 	}
 }
 
