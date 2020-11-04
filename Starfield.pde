@@ -4,6 +4,7 @@ void setup()
 	size(400,400);
 	for(int i = 0;i<sprinkler.length;i++){
 	sprinkler[i] = new Water();
+	sprinkler[0] = new OddballWater();
 	}
 }
 void draw()
@@ -35,9 +36,20 @@ class Water
 	}
 }
 
-class OddballParticle //inherits from Particle
+class OddballWater //inherits from Particle
 {
-	//your
+	OddballWater() {
+	myX = myY = 200;
+	}
+	void draw() {
+	myX = myX + Math.random()*10;
+	myY = myY + Math.random()*10;
+	}
+	void show() {
+	fill(0,255,0);
+	noStroke();
+	rect(myX,myY,10,30);
+	}
 }
 
 
